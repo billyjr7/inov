@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    margin-right: 5px;
+}
+.header{
+    height: 450px;
+    background-image: url("../img/head.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header-success{
+    background: springgreen;
+    width: 320px;
+    height:250px;
+    padding: 20px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 20px;
+}
+.header-success P{
+    color: #fff;
+    font-size: 16px;
+}
+.header-success h1{
+    color: #fff;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+.header-success h5{
+    padding: 15px 0;
+}
+button{
+    padding: 12px 20px;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+}
+button:hover{
+    color: #cccccc;
+}
+/* ABOUT-SECTION */
+.About-section{
+    height: 450px;
+    background-color: #1661be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.About-section p{
+    width: 600px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 40px;
+    line-height: 1.3;
+    border-left: 5px solid springgreen;
+}
+.About-section h1{
+    color: #fff;
+}
+.author{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid springgreen;
+}
+/* Work-section */
+.work-section{
+    background-color: springgreen;
+    height: 200px;
+    text-align: center;
+    color: #fff;
+}
+.work-section h1{
+    padding-top: 30px;
+}
+.work-section-img{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+/* section-innovation */
+.section-innovation{
+    background-color: #1661be;
+    height: 600px;
+    padding-bottom: 20px;;
+}
+.innovation-partition{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 200px;
+}
+.partition1{
+    width: 40%;
+}
+.partition2{
+    width: 25%;   
+    background-image: url("../img/Computer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    padding-bottom: 30px;
+
+}
+.partition1 h1{
+    font-size: 50px;
+    color: white;
+}
+.partition1 p{
+    color: #fff;
+    padding-top: 5px;
+}
+/* Responsiveness */
+@media  (max-width:600px){
+    .header{
+        width: 100%;
+    }
+    .header-success{
+        margin-left: 70px;
+    }
+    .header-success h1{
+        width: 10%;
+    }
+    .About-section{
+        height: auto;
+    }
+    .about-image{
+        margin-top: 20px;
+    }
+    .About-section h1{
+        margin-bottom: 20px;
+    } 
+    .About-section p{
+        width: 80%;
+    }
+    .work-section{
+        height: auto;
+        justify-content: space-between;
+    }
+    img{
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .work-section-img{
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+        width: 100%;
+    }
+    .section-innovation{
+        height: auto;
+    }
+    .innovation-partition{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-left: -50px;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .partition1 p{
+        margin-bottom: 30px;
+    }
+    .partition2{
+        width: 70%;
+        padding-top: 30px;
+        margin-left: 100px;
+    }
+}
